@@ -1,4 +1,4 @@
-# cleanJS_password_generator
+# CleanJS Password Generator
 (https://reedtlr.github.io/cleanJS_password_generator/)
 
 a clean javacript password generator
