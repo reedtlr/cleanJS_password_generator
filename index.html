@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to bootstrap 4.5.2 CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- Link to javacript file with defer to load at the end -->
+    <script src="./Assets/script.js" defer></script>
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans&display=swap" rel="stylesheet"> 
+    <!-- link to CSS stylesheet  -->
+    <link rel="stylesheet" href="./Assets/style.css">
+    
+    <title>cleanJS Password Generator</title>
+</head>
+
+<body>
+    <main class="container">
+
+    <h1> CleanJS Password Generator</h1>
+    <h3>password</h3>
+            
+    <form class="form">
+        <label for= " ">Number of Characters</label>
+        <input type= "range" min= "8" max= "128" value="12" id="characterAmountRange">
+        <input type= "number" min= "8" max= "128" value="12" id="characterAmountNumber">
+        
+        <label for="includeUppercase">Include Uppercase</label>
+        <input type="checkbox" id="includeUppercase">
+            
+        <label for="includeNumber">Include Numbers</label>
+        <input type="checkbox" id="includeNumber">
+        
+        <label for="includeSymbols">Include Symbols</label>
+        <input type="checkbox" id="includeSymbols">   
+
+        <button type="submit">Generate Password</button>
+    </form>
+
+    </main>
+
+    <!-- alternative version  -->
+    <!-- <div class="wrapper">
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+          <div class="card-header">
+            <h2>Generate a Password</h2>
+          </div>
+          <div class="card-body">
+            <textarea
+              readonly
+              id="password"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
+          </div>
+          <div class="card-footer">
+            <button id="generate" class="btn">Generate Password</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html> -->

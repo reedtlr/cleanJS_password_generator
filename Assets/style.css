@@ -1,0 +1,22 @@
+
+body {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* add google font options  */
+    /* font-family: 'Space Mono', monospace; */
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    background-color: #006699;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
