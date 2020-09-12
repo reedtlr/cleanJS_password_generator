@@ -12,3 +12,9 @@
 
 // // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);
+
+var characterAmountRange = document.getElementById ('characterAmaountRange')
+
+var characterAmountNumber = document.getElementById ('characterAmaountNumber')
+
+characterAmountRange.addEventListener ('input', syncCharacterAmount)

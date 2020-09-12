@@ -19,15 +19,15 @@
 <body>
     <main class="container">
 
-    <h1> CleanJS Password Generator</h1>
-    <h3>password</h3>
+    <h1 class="title"> CleanJS Password Generator</h1>
+    <h3 class="passwordDisplay">password</h3>
             
     <form class="form">
         <label for= " ">Number of Characters</label>
         
-        <div> 
+        <div class="characterAmountContainer"> 
             <input type= "range" min= "8" max= "128" value="12" id="characterAmountRange">
-            <input type= "number" min= "8" max= "128" value="12" id="characterAmountNumber">
+            <input class="numberInput" type= "number" min= "8" max= "128" value="12" id="characterAmountNumber">
         </div>
 
         <label for="includeUppercase">Include Uppercase</label>
@@ -42,7 +42,7 @@
         <label for="includeSymbols">Include Symbols</label>
         <input type="checkbox" id="includeSymbols">   
 
-        <button type="submit">Generate Password</button>
+        <button class="genButton" type="submit">Generate Password</button>
     </form>
 
     </main>

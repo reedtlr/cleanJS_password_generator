@@ -25,6 +25,54 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 1rem;
-    column-gap: 1rem;
-    
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.characterAmountContainer {
+    display: flex;
+    align-items: center;
+}
+
+.numberInput {
+    width: 3rem;
+}
+
+.passwordDisplay {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    boarder: 1px solid #333;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;   
+}
+
+.genButton {
+  grid-column: span 2;
+  background-color: transparent;
+  boarder: 2px solid white;
+  color: white;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;   
+}
+
+.genButton:hover {
+    background-color: #FFFFFF33;
 }
