@@ -45,7 +45,7 @@ label {
 }
 
 .numberInput {
-    width: 3rem;
+    width: 2.5rem;
 }
 
 .passwordDisplay {
@@ -62,7 +62,7 @@ label {
     border-radius: .5rem;   
 }
 
-.genButton {
+.btn {
   grid-column: span 2;
   background-color: transparent;
   boarder: 2px solid white;
@@ -73,6 +73,6 @@ label {
   border-radius: 1rem;   
 }
 
-.genButton:hover {
+.btn:hover {
     background-color: #FFFFFF33;
 }
