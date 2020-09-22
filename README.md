@@ -19,5 +19,5 @@ Project is created with:
 Based on a YouTube tutorial small changes made. I created an option for lowercase characters rather than leaving them as a defalt. I changed all variable staments to var to see if it would still run without errors. I changed the font to something more appealing with Google Fonts. (https://youtu.be/iKo9pDKKHnc)
 
 ![Image 1 of 2 of the website](https://reedtlr.github.io/cleanJS_password_generator/Assets/screenshot_cjs1.png)
-![Image 2 of 2 of the website](https://reedtlr.github.io/cleanJS_password_generator/Assets/screenshot_cjs1.png)
+![Image 2 of 2 of the website](https://reedtlr.github.io/cleanJS_password_generator/Assets/screenshot_cjs2.png)
 
