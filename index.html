@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Link to bootstrap 4.5.2 CDN -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <!-- Link to javacript file with defer to load at the end -->
-  
+    <script src="./Assets/script.js" defer></script>
     <!-- Google Fonts CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans&display=swap" rel="stylesheet"> 
     <!-- link to CSS stylesheet  -->
@@ -17,19 +15,24 @@
 </head>
 
 <body>
+
+    <!-- main container for password generator -->
     <main class="container">
 
     <h1 class="title"> CleanJS Password Generator</h1>
     <h3 class="passwordDisplay" id="passwordDisplay">password</h3>
             
+    <!-- passwrod generator form -->
     <form id="passwordGeneratorForm" class="form">
         <label for= "characterAmountNumber">Number of Characters</label>
         
+        <!-- number range and number input box -->
         <div class="characterAmountContainer"> 
             <input type= "range" min= "8" max= "128" value="12" id="characterAmountRange">
             <input class="numberInput" type= "number" min= "8" max= "128" value="12" id="characterAmountNumber">
         </div>
 
+        <!-- character check box options -->
         <label for="includeUppercase">Include Uppercase</label>
         <input type="checkbox" id="includeUppercase">
 
@@ -46,6 +49,6 @@
     </form>
 
     </main>
-    <script src="./Assets/script.js" defer></script>
+
 </body>
 </html> 
