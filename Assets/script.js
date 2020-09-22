@@ -16,17 +16,17 @@ var characterAmountRange = document.getElementById("characterAmountRange");
 var characterAmountNumber = document.getElementById("characterAmountNumber");
 var form = document.getElementById("passwordGeneratorForm");
 var passwordDisplay = document.getElementById("passwordDisplay");
-// var includeLowercase = document.getElementById("includeLowercase");
-// var includeUppercase = document.getElementById("includeUppercase");
-// var includeSymbols = document.getElementById("includeSymbols");
-// var includeNumber = document.getElementById("includeNumber");
+var includeLowercase = document.getElementById("includeLowercase");
+var includeUppercase = document.getElementById("includeUppercase");
+var includeSymbols = document.getElementById("includeSymbols");
+var includeNumber = document.getElementById("includeNumber");
 
-var UPPERCASE_CHAR_CODES = arrayFormLowToHigh(65, 90);
+var UPPERCASE_CHAR_CODES = arrayFormLowToHigh(48, 57);
 var SYMBOLS_CHAR_CODES = arrayFormLowToHigh(33, 47).concat(arrayFormLowToHigh(58, 64).concat
 (arrayFormLowToHigh(91, 96)).concat(arrayFormLowToHigh(123, 126))
 )
-var LOWERCASE_CHAR_CODES = arrayFormLowToHigh(97, 122);
-var NUMBER_CHAR_CODES = arrayFormLowToHigh(48, 57);
+var LOWERCASE_CHAR_CODES = arrayFormLowToHigh(65, 90);
+var NUMBER_CHAR_CODES = arrayFormLowToHigh(97, 122);
 
 characterAmountNumber.addEventListener("input", syncCharacterAmount);
 characterAmountRange.addEventListener("input", syncCharacterAmount);
@@ -49,7 +49,8 @@ form.addEventListener('submit', e => {
 })
 
 function generatePassword(characterAmount, includeLowercase, includeNumber, includeSymbols, includeUppercase) {
-    var charCodes = LOWERCASE_CHAR_CODES
+    var charCodes = []
+    if (includeLowercase) charCodes = charCodes.concat(LOWERCASE_CHAR_CODES)
     if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
     if (includeNumber) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
     if (includeSymbols) charCodes = charCodes.concat(SYMBOLS_CHAR_CODES) 
