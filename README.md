@@ -1,6 +1,8 @@
 # CleanJS Password Generator
 (https://reedtlr.github.io/cleanJS_password_generator/)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 a clean javacript password generator
 ## Table of contents
 * [General info](#general-info)
@@ -20,4 +22,3 @@ Based on a YouTube tutorial with some changes. I created an option for lowercase
 
 ![Image 1 of 2 of the website](https://reedtlr.github.io/cleanJS_password_generator/Assets/screenshot_cjs1.png)
 ![Image 2 of 2 of the website](https://reedtlr.github.io/cleanJS_password_generator/Assets/screenshot_cjs2.png)
-
